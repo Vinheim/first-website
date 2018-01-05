@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+
+<html lang="en-US">
+<head>
+<title>Personal Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no">
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="home">
+<!-- Navigation -->
+<nav id="navigation-menu">
+  <ul class="navigation">
+    <li class="button"><a href="#home" id="home-button" class="nav-item active" onclick="changeNavigationStyle(1)"><i class="fa fa-home"></i> Home</a></li>
+    <li class="button"><a href="#courses" class="nav-item non-active" onclick="changeNavigationStyle(2)"><i class="fa fa-university"></i> Courses</a></li>
+    <li class="button"><a href="#projects" class="nav-item non-active" onclick="changeNavigationStyle(3)"><i class="fa fa-file-code-o"></i> Projects</a></li>
+	<!-- Button to open the modal 'contact' information. -->
+	<li class="button"><button class="nav-item non-active" onclick="changeNavigationStyle(4); document.getElementById('first-modal').style.display='block';"><i class="fa fa-phone"></i> Contact</button></li>
+	<li class="button" style="float:right;"><a href="#biography" class="nav-item non-active" title="Learn about who I am." onclick="changeNavigationStyle(5)"><i class="fa fa-id-card-o"></i> About Me</a></li>
+  </ul>
+</nav>
+
+<!-- Contact Modal -->
+<div id="first-modal" class="modal">
+  <!-- Modal Content -->
+  <div class="modal-content animate">
+    <div class="card">
+	  <div class="close-button">
+	    <span onclick="document.getElementById('first-modal').style.display='none';" class="close" title="Close Section.">&times;</span>
+    </div>
+	  <img src="High School John.jpg" alt="John Hessefort" style="width: 100%;">
+	  <div class="container">
+	    <h1>John Hessefort</h1>
+		<p class="title"><em>Computer Science Undergraduate Student</em></p>
+		<p>Old Dominion University</p>
+		<a href="#home" class="contact" title="jhess004@gmail.com">
+		  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x"></i></span>
+		</a>
+		<a href="https://www.twitter.com" target="_blank" class="contact">
+		  <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span>
+		</a>
+		<a href="https://www.facebook.com" target="_blank" class="contact">
+		  <span class="fa fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span>
+		</a>
+		<p><a href="#contact" class="contact-button" onclick="document.getElementById('first-modal').style.display='none';">Contact</a></p>
+	  </div>
+    </div>
+  </div>
+</div>
+
+<!-- Back-to-Top Button -->
+<button onclick="backToTop()" id="topBtn" title="Return to the top of the page.">Top</button>
+
+<!-- Slide Show -->
+<section class="slideshow-container" id="projects">
+  
+  <div class="mySlides fade">
+    <img class="slideshow-image" src="Forest Kingdom Castle Entrance.jpg" style="width:100%;">
+    <div class="headtext">The Forest Kingdom</div>
+	<div class="subtext">is a country of machines who fight to protect the ideals and teachings of their old king.</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img class="slideshow-image" src="The Sunken City.jpg" style="width:100%;">
+    <div class="headtext">The Sunken City</div>
+	<div class="subtext">is the remnant of a lost human civilization, ruined due to collapsed bedrock.</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img class="slideshow-image" src="The Cave of Lunar Tears.jpg" style="width:100%;">
+    <div class="headtext">The Cave of Lunar Tears</div>
+	<div class="subtext">is a sanctuary of flowers nurtured by the protective being Emil.</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img class="slideshow-image" src="The Tower.jpg" style="width:100%;">
+	<div class="headtext">The Tower</div>
+	<div class="subtext">is a construction meant to destroy what little data there is left of humanity.</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <video onclick="pauseVideo()" id="A2" controls>
+	  <source src="A2 Walking Animation.mp4" type="video/mp4">
+	</video>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</section>
+
+<!-- Navigational Dots -->
+<div style="text-align: center;">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<!-- About Me -->
+<div class="about-me-container" id="biography">
+  <h3 id="about-me-header">ABOUT ME</h3>
+  <p id="about-me-opener"><em>Videogames are my inspiration.</em></p>
+  <p id="about-me">Even when I was just a kid, I had a passion for gaming and an affinity for my home computer.
+  I remember playing Halo 2, cruising down a bridge in a tank whilst being pursued by a handful of banshees and being asked by my parents what I wanted to do with my life when I grew older.
+  I replied verbatim "I don't know. But it'll definitely be a job involving computers." This vague response grew alongside me throughout 
+  middle and high school, particularly with my participation in the instruction of a Programming in Java Computer Science course, and when time came for me to enter university, I was certain that I wanted to pursue a degree in Computer Science.</p>
+</div>
+
+<!-- Courses List -->
+<h1 id="courses" class="title">Computer Science Courses</h1>
+<div class = "all-courses">
+  <div class = "online-courses">
+    <h1>Online Courses</h1>
+	<div class = "courses-button" title="Show courses.">Courses Taken</div>
+	<ul class = "courses">
+	  <li>Codecademy: Learn HTML & CSS</li>
+	  <li>Codecademy: Learn JavaScript</li>
+      <li>Codecademy: Learn JQuery</li>
+	  <li>CS252: Introduction to Unix for Programmers</li>
+    </ul>
+  </div>
+  <div class = "offline-courses">
+    <h1>In-Person Courses</h1>
+    <div class = "courses-button" title="Show courses.">Courses Taken</div>
+	<ul class = "courses">
+	  <li>CS150: Introduction to Programming and Problem Solving with C++ I</li>
+	  <li>CS170: Introduction to Computer Architecture I</li>
+	  <li>CS250: Introduction to Programming and Problem Solving with C++ II</li>
+	  <li>MATH163: Precalculus II</li>
+	  <li>MATH211: Calculus I</li>
+    </ul>
+  </div> 
+</div>
+
+<!-- Contact Form -->
+<div id="contact" class="contact-form-container">
+  <form>
+    <h3 id="contact-title">Contact Form</h3>
+    <label for="fname">First Name</label>
+	<input type="text" id="fname" name="firstname" placeholder="Your First Name...">
+	
+	<label for="lname">Last Name</label>
+	<input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
+	
+	<label for="email">E-Mail</label>
+	<input type="text" id="email" name="email" placeholder="Your E-Mail Address...">
+	
+	<label for="subject">Subject</label>
+	<textarea id="subject" name="subject" placeholder="What would you like to contact me about?" style="height:200px;"></textarea>
+	
+	<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-paper-plane fa-stack-1x"></i></span>
+	<input type="submit" value="Send Message!" title="Submit contact information.">
+  </form>
+</div>
+
+<script src = "https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src = "main.js"></script>
+</body>
+</html>
