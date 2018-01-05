@@ -255,7 +255,7 @@ video {
   font-family: "Times", "Serif";
   transition: 0.3s ease;
   color: #FFF;
-  font-size: 10vmin;
+  font-size: 10%;
   padding: 8px 12px;
   position: absolute;
   bottom: 16%;
@@ -268,7 +268,7 @@ video {
   font-family: "Times", "Serif";
   transition: 0.3s ease;
   color: #FFF;
-  font-size: 7.5vmin;
+  font-size: 5%;
   padding: 8px 12px;
   position: absolute;
   bottom: 12%;
