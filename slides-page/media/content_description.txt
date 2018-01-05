@@ -1,0 +1,1 @@
+This directory holds a collection of the various images and videos used across this webpage, specifically those included within the slideshow.
