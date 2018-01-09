@@ -74,11 +74,13 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; /* Show the picture that has been chosen. */
   dots[slideIndex-1].className += " active"; /* Make active the dot which corresponds to the chosen picture. (Gives the dot a light blue color.) */
   
-  /* Pauses and Plays the Video depending upon if it is the current slide. */
+  /* Pauses and Plays the Video depending upon if it is the current slide.
   if(slideIndex-1 != 4)
 	video.pause();
+  */
 }
 
+/*
 function pauseVideo() {
   var video = document.getElementById("A2");
   if(video.paused == true)
@@ -86,6 +88,7 @@ function pauseVideo() {
   else
 	video.pause();
 }
+*/
 
 $(document).ready(main);
 
