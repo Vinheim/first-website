@@ -66,7 +66,7 @@ function showSlides(n) {
   if(n > slides.length) {slideIndex = 1;} /* If the Slide Index exceeds the maximum number of slides, reset it to the leftmost slide. */
   if(n < 1) {slideIndex = slides.length;} /* If the Slide Index exceeds the minimum number of slides, set it to the rightmost slide. */
   for(i = 0; i < slides.length; i++) { /* Initialize the pictures to a non-shown state. */
-    slides[i].style.display = "block"; 
+    slides[i].style.display = "none"; 
   }
   for(i = 0; i < dots.length; i++) { /* Initialize the dots to a non-active state. */
     dots[i].className = dots[i].className.replace(" active", "");
