@@ -28,7 +28,7 @@ li.button a {
   padding: 14px 16px;
   text-decoration: none;
   transition: 0.6s ease;
-  font-size: 1.25vw;
+  font-size: 1.5vw;
 }
 
 li.button button {
@@ -38,7 +38,7 @@ li.button button {
   padding: 14px 16px;
   text-decoration: none;
   transition: 0.6s ease;
-  font-size: 1.25vw;
+  font-size: 1.5vw;
   border: none;
   cursor: pointer;
 }
